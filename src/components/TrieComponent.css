@@ -1,0 +1,19 @@
+/* Tree container should take 70% of the screen height */
+.tree-container {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: max-height 0.4s ease-in-out; /* Smooth transition */
+  position: relative;
+}
+
+.tree-container.panel-visible {
+  max-height: 80%; /* When the panel is visible, tree takes up 80% */
+}
+
+.tree-container.panel-hidden {
+  max-height: calc(100% - 40px); /* When the panel is hidden, tree takes 100% minus the show-bar height */
+}
+

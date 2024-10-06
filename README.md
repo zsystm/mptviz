@@ -1,46 +1,35 @@
-# Getting Started with Create React App
+# Merkle Patricia Trie Simulator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+The **Merkle Patricia Trie Simulator** is an interactive tool designed to help developers and blockchain enthusiasts visualize and better understand one of Ethereum's core data structures—the Merkle Patricia Trie (MPT). Given the complexity of this hybrid trie, it can be challenging to grasp its mechanics purely through documentation or conceptual models. This simulator enables users to interact directly with the trie by inserting, updating, and deleting data in real-time, allowing for a deeper understanding through hands-on exploration.
 
-## Available Scripts
+## Features
+- **Real-Time Visualization**: As you interact with the trie, the simulator dynamically visualizes the structure, enabling you to observe how the trie nodes and hashes change with each operation.
+- **Insert & Update Operations**: Easily add or update key-value pairs in the trie and see how the trie structure adjusts accordingly.
+- **Delete Operations**: Remove data from the trie and watch how the structure rebalances itself.
+- **Ethereum Compatibility**: Simulates the exact behavior of Ethereum’s MPT, the backbone of the state tree in Ethereum.
 
-In the project directory, you can run:
+## Why This Tool?
+Ethereum’s Merkle Patricia Trie is essential for maintaining the state of the blockchain and facilitating efficient verification of state transitions. However, its intricate blend of a radix tree and Merkle tree makes it non-trivial to fully understand. This simulator brings the theoretical concepts into the real world, helping you visualize how the MPT evolves with each transaction—enhancing both your knowledge and troubleshooting skills when dealing with Ethereum-based systems.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**1: Clone the repository:**
+```sh
+git clone https://github.com/your-repo/MPT-Simulator.git
+cd MPT-Simulator
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**2: Install dependencies and run:**
+```sh
+npm install
+npm start
+```
 
-### `npm test`
+**3: Open the application in your browser and start interacting with the Merkle Patricia Trie.**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Contributions
+This project welcomes contributions from developers and researchers alike. Whether it's fixing a bug, optimizing performance, or adding new features, feel free to submit a PR or open an issue.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
+This project is licensed under the MIT License. Feel free to use and modify it for your own projects.

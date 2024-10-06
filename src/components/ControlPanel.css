@@ -1,0 +1,214 @@
+.control-panel {
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Display control panel conditionally based on visibility */
+.control-panel.visible {
+  display: block;
+}
+
+.control-panel.hidden {
+  display: none;
+}
+
+.toggle-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+/* Common button styles for toggle, execute, and rollback buttons */
+.toggle-button,
+.execute-button,
+.reset-button,
+.rollback-button {
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0; /* Align it to the top */
+  background-color: #007bff;
+  padding: 10px 20px;
+}
+
+/* Hover effect for toggle button */
+.toggle-button:hover {
+  background-color: #0056b3;
+}
+
+/* Layout of control console: left and right panels each take 50% width */
+.control-console {
+  display: flex;
+  width: 100%;
+}
+
+.controls-left {
+  width: 40%; 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.controls-right { /* Left and right panels each occupy 50% of the width */
+  width: 60%; 
+  padding: 20px;
+  text-align: center;
+}
+
+.controls-right h3 {
+  margin: 0; 
+  margin-bottom: 10px 0;
+  text-align: center;
+}
+
+.input-row {
+  display: flex;
+  flex-direction: column; /* Arrange Action, Key, and Value vertically */
+  gap: 15px; /* Space between rows */
+  width: 100%; /* Occupy full width of the parent container */
+}
+
+/* Action, Key, and Value sections: labels and inputs aligned horizontally */
+.action,
+.input-key,
+.input-value,
+.example-key,
+.example-value {
+  display: flex;
+  align-items: center; 
+  width: calc(100% - 20px); /* Full width minus margin */
+  margin-left: 10px; /* Left margin for spacing */
+}
+
+.action label,
+.input-key label,
+.input-value label,
+.example-key label,
+.example-value label
+{
+  width: 70px; /* Fixed label width for alignment */
+  text-align: left; /* Left-align the label text */
+}
+
+select,
+.example-key button,
+.example-value button {
+  padding: 5px
+}
+
+input {
+  padding: 5px;
+  flex: 1; /* input field takes full available width */
+}
+
+.input-key input,
+.input-value input {
+  width: 100%;
+}
+
+.button-box {
+  display: flex; 
+  justify-content: space-between; 
+  gap: 10px; 
+  margin-top: 20px;
+  width: 100%; 
+}
+
+.execute-button, .reset-button {
+  padding: 10px 15px;
+  width: 48%; 
+  text-align: center;
+}
+
+.execute-button {
+  background-color: #28a745;
+}
+
+.reset-button {
+  background-color: #dc3545;
+}
+
+.execute-button:hover {
+  background-color: #218838;
+}
+
+.reset-button:hover {
+  background-color: #c82333;
+}
+
+.trace-log {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px; /* Set a max height for the scrollable area */
+  overflow-y: auto; /* Enable vertical scrolling */
+  text-align: left;
+}
+
+.trace-log li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: white;;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.trace-log li[data-action="insertOrUpdate"] {
+  border-left: 4px solid #28a745; 
+}
+
+.trace-log li[data-action="delete"] {
+  border-left: 4px solid #dc3545; 
+}
+
+.rollback-button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #dc3545;
+}
+
+/* Hover effect for rollback button */
+.rollback-button:hover {
+  background-color: #c82333;
+}
+
+.example-key-button, .example-value-button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.example-key-button:hover, .example-value-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Show bar when panel is hidden */
+.show-bar {
+  position: fixed;  /* Ensure the bar stays at the bottom */
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+  border-top: 2px solid #aaa;
+}
+
+
+.show-bar .toggle-button {
+  background-color: #28a745;
+  color: white;
+}
