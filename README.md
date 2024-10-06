@@ -1,5 +1,7 @@
 # Merkle Patricia Trie Simulator
 
+![mptviz](./mptviz.png)
+
 ## Overview
 The **Merkle Patricia Trie Simulator** is an interactive tool designed to help developers and blockchain enthusiasts visualize and better understand one of Ethereum's core data structures—the Merkle Patricia Trie (MPT). Given the complexity of this hybrid trie, it can be challenging to grasp its mechanics purely through documentation or conceptual models. This simulator enables users to interact directly with the trie by inserting, updating, and deleting data in real-time, allowing for a deeper understanding through hands-on exploration.
 
