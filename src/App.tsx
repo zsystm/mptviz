@@ -37,7 +37,7 @@ function App() {
           break;
         case "delete":
           method = "DELETE";
-          url = `${API_URL}/v1/mpt/delete?${queryParams}`;
+          url = `${API_URL}/mpt/delete?${queryParams}`;
           break;
       }
       const response = await fetch(url, {
