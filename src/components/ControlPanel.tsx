@@ -127,11 +127,11 @@ const ControlPanel: React.FC<ControlPanelProps> = ({
             {traceLogs.map((log, index) => (
               <li key={index} data-action={log.action}>
                 [{log.action}] key: {log.key}, value: {log.value}
-                {index === traceLogs.length - 1 && (
+                {/* {index === traceLogs.length - 1 && (
                   <button onClick={handleRollback} className="rollback-button">
                     Rollback
                   </button>
-                )}
+                )} */}
               </li>
             ))}
           </ul>
